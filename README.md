@@ -1,5 +1,4 @@
-#My Coding Style
----
+# My Coding Style
 
 Nowadays I feel a great need to be prodcutive. The best way to accomplish this, is to use the same pattern, conventions and guides in all my projects. But there are so many rules and guides out there than it can be a *little* confusing. 
 
@@ -46,6 +45,8 @@ So, in order words I felt it was about time to define **My Coding Style**.
 	- Equality
 	- Loops
 - Markdown
+	- Titles
+	- GFM 
 
 ## Git
 
@@ -82,25 +83,115 @@ Don't commit big files unless they're absolutely required. Big files lead to big
 
 Always use **HTML 5** doctype.
 
-```html
-Good
-<!DOCTYPE html>
-
-Bad
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-```
+> Reason: As days goes by the amount of HTML5 valid markups is increasing, so it's better to use a simple doctype and stick with valid HTML4 and 5 tags.
 
 ### Meta tags
+
+Using the right meta tags can inscrease the relevance in search engines and be a meaningful help for user agents. This said, there are some meta tags that are worth taking a look at:
+
+```html
+<meta name="description" content="A brief description about the website">
+<meta name="keywords" content="html, php, javascript, css, markdown, git">
+<meta name="robots" content="index">
+<meta name="language" content="en-US">
+<meta name="author" content="Cassio Cardoso">
+```
+
+> Reason: It is important to use meta tags to make the web site more relevant for search engines.
+
 ### CSS files
+
+Put all CSS in one directory, commonly the `css` directory. When using a preprocessor stick with the plan and build all necessary `.css` files in one directory.
+
+Link all the CSS files on the top of the page.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/theme.css">
+</head>
+<body>
+    ...
+</body>
+</html>
+```
+
 ### JS files
+
+Put all JS in one directory, commonly the `js` directory. Put all the `js` requisitions at the bottom of the page.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    ...
+</head>
+<body>
+    <script type="text/javascript" src="js/myscript.js">
+</body>
+</html>
+```
+
 ### Inline styles
+
+Never use inline style!
+
+> Reason: "It's like crossing the streams in Ghostbusters. It's just not a good idea." - Chris Coyier (in reference to smoething completely unrelated)
+
 ### Inline JS
+
+Never use inline JS. We're not in 1996 anymore. All JS scripts must be written in a separate file and then inserted into the page.
+
+> Reason: TODO.
+
 ### Validation
+
+Use some kind of HTML Validator to make sure the code is written the best way possible.
+
+> Reason: TODO.
+
 ### Tag names
+
+Always write tag names in **lowercase**.
+
+```html
+//Good
+<hmtl>
+<head></head>
+<body></body>
+</html>
+//Bad
+<HTML>
+<Head></Head>
+<Body></Body>
+</HTML>
+``` 
 ### Using H1 ... H6 tags
-### Images
-### Sections
+
+Always use `h1` - `h6` tags to define titles in the web page. If writting an article reserve `h1` tag for the article title and then use the others to separate the article sections.
+
+There's another good point that it's good for both semantic and SEO reasons so, why not?
+
+> Reason: TODO.
+
+### Images Alt
+
+Always use the alt attribute for images. It's both important for validation and accessibility and it takes only 1 minute.
+
+> Reason: TODO.
+
 ### Forms
+
+Use `fieldset` and `labels` in forms. This will help make the form more understandable for users.
+
+```html
+<fieldset>
+   <label for="name">Name:</label><input type="text" id="name" name="name">
+   <label for="email">Email:</label><input type="text" id="email" name="email">
+</fieldset>
+```
 
 ## CSS
 
@@ -432,6 +523,18 @@ for (initialization; condition; expression) statement;
 
 > Reason: TODO
 
+## Markdown
+
+> "If something needs to be written, it **must** be written in Markdown." - Cassio Cardoso (yes, I'm quoting myself!)
+
+### Titles
+
+Always put one space between the title and the `#`.
+
+### GFM
+
+When available, use GFM (GitHub Flavored Markdown).
+
 ###### References
 
 Heavily inspired by:
@@ -441,7 +544,3 @@ Heavily inspired by:
 [Zeno Rocha Coding Style](https://github.com/zenorocha/my-coding-style)
 
 [Mark Otto Code Guide](https://github.com/mdo/code-guide)
-
-[30 HTML Best Practices](http://code.tutsplus.com/tutorials/30-html-best-practices-for-beginners--net-4957)
-
-[20 HTML Best practices you should follow](http://sixrevisions.com/web-standards/20-html-best-practices-you-should-follow/)
