@@ -83,6 +83,10 @@ Don't commit big files unless they're absolutely required. Big files lead to big
 
 Always use **HTML 5** doctype.
 
+```html
+<!DOCTYPE html>
+```
+
 > Reason: As days goes by the amount of HTML5 valid markups is increasing, so it's better to use a simple doctype and stick with valid HTML4 and 5 tags.
 
 ### Meta tags
@@ -136,19 +140,24 @@ Put all JS in one directory, commonly the `js` directory. Put all the `js` requi
 
 ### Inline styles
 
-Never use inline style!
+**Never** use inline style! Always put all styling in different `.css` files and link them in the header of the page.
 
 > Reason: "It's like crossing the streams in Ghostbusters. It's just not a good idea." - Chris Coyier (in reference to smoething completely unrelated)
 
 ### Inline JS
 
-Never use inline JS. We're not in 1996 anymore. All JS scripts must be written in a separate file and then inserted into the page.
+Never use inline JS. **We're not in 1996 anymore**. All JS scripts must be written in a separate file and then inserted into the page.
 
 > Reason: TODO.
 
 ### Validation
 
 Use some kind of HTML Validator to make sure the code is written the best way possible.
+
+Some validators options:
+- [grunt-html-validation](https://github.com/praveenvijayan/grunt-html-validation)
+- [Html Validator for Firefox](https://addons.mozilla.org/en-US/firefox/addon/html-validator/)
+- [Web Validation W3Schools](http://www.w3schools.com/website/web_validate.asp)
 
 > Reason: TODO.
 
@@ -157,16 +166,14 @@ Use some kind of HTML Validator to make sure the code is written the best way po
 Always write tag names in **lowercase**.
 
 ```html
-//Good
 <hmtl>
-<head></head>
-<body></body>
+    <head>
+    ...
+    </head>
+    <body>
+    ...
+    </body>
 </html>
-//Bad
-<HTML>
-<Head></Head>
-<Body></Body>
-</HTML>
 ``` 
 ### Using H1 ... H6 tags
 
@@ -174,11 +181,21 @@ Always use `h1` - `h6` tags to define titles in the web page. If writting an art
 
 There's another good point that it's good for both semantic and SEO reasons so, why not?
 
+```html
+<h1>Page/Article Title</h1>
+<h2>Article Section Title</h2>
+<h3>Sub-Section Title</h3>
+```
+
 > Reason: TODO.
 
 ### Images Alt
 
 Always use the alt attribute for images. It's both important for validation and accessibility and it takes only 1 minute.
+
+```html
+<img src="path/to/img.jpg" alt="Image Alternative Text">
+```
 
 > Reason: TODO.
 
