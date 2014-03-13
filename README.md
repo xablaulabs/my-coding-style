@@ -27,7 +27,6 @@ So, in order words I felt it was about time to define **My Coding Style**.
 	- Images
 	- Sections
 	- Forms
-	
 - CSS
 	- Indentation
 	- Class names
@@ -46,6 +45,7 @@ So, in order words I felt it was about time to define **My Coding Style**.
 	- Loops
 - Markdown
 	- Titles
+	- Text
 	- GFM 
 
 ## Git
@@ -547,6 +547,10 @@ for (initialization; condition; expression) statement;
 ### Titles
 
 Always put one space between the title and the `#`.
+
+### Text
+
+Always separate titles from text with one new line. It increases text legibility without changing the way the markdown file is rendered.
 
 ### GFM
 
