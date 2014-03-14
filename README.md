@@ -4,6 +4,10 @@ Nowadays I feel a great need to be prodcutive. The best way to accomplish this, 
 
 So, in order words I felt it was about time to define **My Coding Style**.
 
+## License
+
+[Creative Commons CC-BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 ## Let's rock...
 
 
