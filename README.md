@@ -20,6 +20,7 @@ So, in order words I felt it was about time to define **My Coding Style**.
 	- Files
 - HTML
 	- Doctype
+	- Indentation
 	- Meta tags
 	- CSS files
 	- JS files
@@ -81,6 +82,8 @@ When releasing a new version, write a commit message in the following format "Re
 
 Don't commit big files unless they're absolutely required. Big files lead to big git history and it will be a pain for others to use the repo.
 
+Include these files, or directory, in the `.gitignore`.
+
 ## HTML
 
 ### Doctype
@@ -92,6 +95,24 @@ Always use **HTML 5** doctype.
 ```
 
 > Reason: As days goes by the amount of HTML5 valid markups is increasing, so it's better to use a simple doctype and stick with valid HTML4 and 5 tags.
+
+### Indentation
+
+Always use **2 spaces** for indentation.
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Page Title</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    ...
+  </body>
+</html>
+```
+
+> Reason: TODO.
 
 ### Meta tags
 
@@ -271,17 +292,17 @@ Always use **lowercase** hex colors instead of color names, and whenever possibl
 
 ### Indentation
 
-The unit of indentation is **4 spaces**. Never mix spaces and tabs.
+The unit of indentation is **2 spaces**. Never mix spaces and tabs.
 
 ```javascript
 // Good
 while (condition) {
-    statements
+  statements
 }
 
 // Bad
 while (condition) {
-  statements
+statements
 }
 ```
 
@@ -289,12 +310,12 @@ while (condition) {
 
 ### Line length
 
-Avoid lines longer than **100 characters**. When a statement will not fit on a single line, it may be necessary to break it. Place the break after an operator, ideally after a comma. The next line should be indented **4 spaces**.
+Avoid lines longer than **100 characters**. When a statement will not fit on a single line, it may be necessary to break it. Place the break after an operator, ideally after a comma. The next line should be indented **2 spaces**.
 
 ```javascript
 // Good
 YUI().use('aui-module-a', 'aui-module-b', 'aui-module-c', 'aui-module-d',
-    'aui-module-e', 'aui-module-f');
+  'aui-module-e', 'aui-module-f');
 
 // Bad
 YUI().use('aui-module-a', 'aui-module-b', 'aui-module-c', 'aui-module-d', 'aui-module-e', 'aui-module-f');
