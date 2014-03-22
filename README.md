@@ -1,6 +1,6 @@
 # My Coding Style
 
-Nowadays I feel a great need to be prodcutive. The best way to accomplish this, is to use the same pattern, conventions and guides in all my projects. But there are so many rules and guides out there than it can be a *little* confusing. 
+Nowadays I feel a great need to be prodcutive. The best way to accomplish this, is to use the same pattern, conventions and guides in all my projects. But there are so many rules and guides out there than it can be a *little* confusing.
 
 So, in order words I felt it was about time to define **My Coding Style**.
 
@@ -10,48 +10,47 @@ So, in order words I felt it was about time to define **My Coding Style**.
 
 ## Let's rock...
 
-
 > "All code in any code-base should look like a single person typed it, no matter how many people contributed."
 
 ## Topics
 
-- Git
-	- Commit
-	- Files
-- HTML
-	- Doctype
-	- Indentation
-	- Meta tags
-	- CSS files
-	- JS files
-	- Inline styles
-	- Inline JS
-	- Validation
-	- Tag names
-	- Using H1 ... H6 tags
-	- Images
-	- Sections
-	- Forms
-- CSS
-	- Indentation
-	- Class names
-	- Colors
-- Javascript
-	- Indentation
-	- Line length
-	- Linting
-	- Semicolons
-	- Variables
-	- Strings
-	- New lines
-	- Whitespace
-	- Conditionals
-	- Equality
-	- Loops
-- Markdown
-	- Titles
-	- Text
-	- GFM 
+- [Git](#git)
+	- [Commit](#commit)
+	- [Files](#files)
+- [HTML](#html)
+	- [Doctype](#doctype)
+	- [Indentation](#indentation)
+	- [Meta tags](#meta-tags)
+	- [CSS files](#css-files)
+	- [JS files](#js-files)
+	- [Inline styles](#inline-styles)
+	- [Inline JS](#inline-js)
+	- [Validation](#validation)
+	- [Tag names](#tag-names)
+	- [Using H1 ... H6 tags](#using-h1--h6-tags)
+	- [Images Alt](#images-alt)
+	- [Sections](#sections)
+	- [Forms](#forms)
+- [CSS](#css)
+	- [Indentation](#identation-1)
+	- [Class names](#class-names)
+	- [Colors](#colors)
+- [JavaScript](#javascript)
+	- [Indentation](#identation-2)
+	- [Line length](#line-length)
+	- [Linting](#linting)
+	- [Semicolons](#semicolons)
+	- [Variables](#variables)
+	- [Strings](#strings)
+	- [New lines](#new-lines)
+	- [Whitespace](#whitespace)
+	- [Conditionals](#conditionals)
+	- [Equality](#equality)
+	- [Loops](#loops)
+- [Markdown](#markdown)
+	- [Titles](#titles)
+	- [Text](#text)
+	- [GFM](#gfm)
 
 ## Git
 
@@ -199,7 +198,7 @@ Always write tag names in **lowercase**.
     ...
     </body>
 </html>
-``` 
+```
 ### Using H1 ... H6 tags
 
 Always use `h1` - `h6` tags to define titles in the web page. If writting an article reserve `h1` tag for the article title and then use the others to separate the article sections.
